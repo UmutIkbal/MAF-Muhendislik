@@ -1,26 +1,190 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #5F643C;
+  --foreground: #3f2b21;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-noto-serif-display);
+  --font-mono: var(--font-ibm-plex-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #f5ebdb;
+  color: #2f241d;
+  font-family: var(--font-inter), Arial, sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-noto-serif-display), Georgia, serif;
+}
+
+.font-aux {
+  font-family: var(--font-ibm-plex-mono), Consolas, monospace;
+}
+
+.maf-symbol {
+  background-color: #4f6b43;
+  -webkit-mask: url("/maf-symbol.webp") center / contain no-repeat;
+  mask: url("/maf-symbol.webp") center / contain no-repeat;
+}
+
+main {
+  scroll-snap-type: y proximity;
+  overflow-x: hidden;
+}
+
+.page-section {
+  min-height: 100svh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(1rem, 3vw, 2rem);
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  
+}
+
+.services-card-scroll {
+  margin-inline: calc(-1 * clamp(1rem, 3vw, 2rem));
+  padding-inline: clamp(1rem, 3vw, 2rem);
+}
+
+@media (max-width: 639px) {
+  .page-section:first-of-type {
+    padding-top: calc(3.25rem + env(safe-area-inset-top));
+  }
+}
+
+@media (max-width: 390px) {
+  .page-section {
+    min-height: 100svh;
+    padding: 0.9rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+  }
+
+  .page-section:first-of-type {
+    padding-top: calc(3.5rem + env(safe-area-inset-top));
+  }
+
+  .services-card-scroll {
+    margin-inline: -0.9rem;
+    padding-inline: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-section {
+    min-height: 100vh;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+@keyframes heroSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-heroSlideIn {
+  animation: heroSlideIn 0.8s ease-out forwards;
+}
+
+.delay-150 {
+  animation-delay: 0.15s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-450 {
+  animation-delay: 0.45s;
+}
+
+.delay-600 {
+  animation-delay: 0.6s;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-mobile-menu {
+  animation: slideDown 0.2s ease-out;
 }
