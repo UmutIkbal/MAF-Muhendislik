@@ -69,6 +69,32 @@ export default async function ProjectDetailPage({ params }: PageProps<"/portfoly
         </aside>
       </section>
 
+      <section className="border-y border-[#6d4b2f]/15 bg-[#f5ebdb] px-5 py-16 sm:px-8 sm:py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-6 border-b border-[#6d4b2f]/20 pb-9 lg:grid-cols-[.7fr_1.3fr] lg:items-end">
+            <div>
+              <p className="font-aux text-sm font-semibold uppercase tracking-[0.25em] text-[#4f6b43]">Güven veren detaylar</p>
+              <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">Estetik, doğru teknik kararlarla kalıcı olur.</h2>
+            </div>
+            <p className="text-base leading-8 text-[#5d4638] sm:text-lg">{project.trustStatement}</p>
+          </div>
+
+          <dl className="mt-8 grid gap-4 sm:grid-cols-2">
+            {project.specifications.map((spec) => (
+              <div key={spec.label} className="rounded-[22px] border border-[#6d4b2f]/15 bg-[#eee2cc]/60 p-6 sm:p-7">
+                <dt className="font-aux text-xs font-semibold uppercase tracking-[0.2em] text-[#4f6b43]">{spec.label}</dt>
+                <dd className="mt-3 text-xl font-semibold text-[#2f241d]">{spec.value}</dd>
+                <p className="mt-3 text-sm leading-6 text-[#6d4b2f]">{spec.detail}</p>
+              </div>
+            ))}
+          </dl>
+
+          <p className="font-aux mt-7 text-xs leading-5 text-[#6d4b2f]">
+            Teknik ve malzeme bilgileri projeye özeldir; kesin ürün, marka ve uygulama detayları proje dokümanlarıyla birlikte paylaşılır.
+          </p>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-6xl px-5 pb-20 sm:px-8 sm:pb-28">
         <div className="mb-8 flex items-end justify-between gap-6 border-b border-[#6d4b2f]/20 pb-6">
           <div><p className="font-aux text-sm font-semibold uppercase tracking-[0.25em] text-[#4f6b43]">Galeri</p><h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Projeden kareler</h2></div>
