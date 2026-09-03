@@ -13,11 +13,11 @@ export default function Home() {
       <Navbar />
 
       <section
-        className="page-section relative overflow-hidden  "
+        className="page-section relative isolate overflow-hidden bg-black"
         id="anasayfa"
-        style={{ backgroundImage: "url('/stokfotro.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}
+        style={{ backgroundImage: "url('/stokfotro.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundColor: "#000" }}
       >
-       <div className="absolute inset-[-2px] bg-gradient-to-b from-black/70 via-black/90 to-black/90" />
+       <div className="absolute inset-0 bg-black/25 bg-gradient-to-b from-black/70 via-black/90 to-black/90" />
         <div className="absolute left-[10%] top-[-10%] h-56 w-56 rounded-full bg-[#4f6b43]/10 blur-3xl" />
         <div className="absolute  bottom-[-8%] right-[-10%] h-64 w-64 rounded-full bg-[#4f6b43]/8 blur-3xl" />
         <Hero />

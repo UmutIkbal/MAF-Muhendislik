@@ -28,32 +28,32 @@ export default function About() {
 
   return (
     <div ref={aboutRef} className="mx-auto w-full max-w-6xl">
-      <div className="flex flex-col items-center gap-7 text-center sm:gap-8">
+      <div className="flex flex-col items-center gap-4 text-center sm:gap-8">
         <div className={introClass}>
           <p className="text-md font-aux font-semibold uppercase tracking-[0.35em] text-[#4f6b43]">
             Hakkımızda
           </p>
-          <h2 className="mx-auto mt-3 max-w-3xl text-2xl font-semibold leading-tight text-[#2f241d] sm:text-3xl lg:text-4xl">
+          <h2 className="mx-auto mt-2 max-w-3xl text-2xl font-semibold leading-tight text-[#2f241d] sm:mt-3 sm:text-3xl lg:text-4xl">
             Sade bir yaklaşım, her ayrıntıda güçlü bir teknik altyapı.
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base font-medium leading-7 text-[#4b3428] sm:text-lg">
+          <p className="mx-auto mt-3 max-w-2xl text-sm font-medium leading-6 text-[#4b3428] sm:mt-4 sm:text-lg sm:leading-7">
             MAF Mühendislik olarak projelerin doğru planlanması ve doğru sunulması için çalışıyor; detaylara önem veren, bütüncül bir anlayışla ilerliyoruz.
           </p>
-          <div className="mx-auto mt-6 h-px w-full max-w-xl bg-gradient-to-r from-transparent via-[#4f6b43] to-transparent" />
+          <div className="mx-auto mt-4 h-px w-full max-w-xl bg-gradient-to-r from-transparent via-[#4f6b43] to-transparent sm:mt-6" />
         </div>
 
-        <div className="grid w-full max-w-5xl gap-3 sm:grid-cols-3">
+        <div className="grid w-full max-w-5xl gap-2 sm:grid-cols-3 sm:gap-3">
           {values.map((value) => (
             <article
               key={value.number}
-              className={`group rounded-[20px] border border-[#6d4b2f]/20 bg-[#efe2cb]/75 p-4 shadow-lg shadow-[#6d4b2f]/5 transition duration-300 hover:-translate-y-1 hover:border-[#4f6b43]/45 hover:bg-[#efe2cb] ${isVisible ? "opacity-100 animate-heroSlideIn" : "opacity-0"}`}
+              className={`group rounded-[18px] border border-[#6d4b2f]/20 bg-[#efe2cb]/75 p-3 shadow-lg shadow-[#6d4b2f]/5 transition duration-300 hover:-translate-y-1 hover:border-[#4f6b43]/45 hover:bg-[#efe2cb] sm:rounded-[20px] sm:p-4 ${isVisible ? "opacity-100 animate-heroSlideIn" : "opacity-0"}`}
               style={isVisible ? { /* animationDelay: value.delay */ } : undefined}
             >
-              <div className="flex flex-col items-center gap-3">
-                <span className="font-aux text-sm font-semibold tracking-[0.2em] text-[#4f6b43] font-bold text-xl ">{value.number}</span>
+              <div className="flex flex-col items-center gap-1.5 sm:gap-3">
+                <span className="font-aux text-lg font-bold tracking-[0.2em] text-[#4f6b43] sm:text-xl">{value.number}</span>
                 <div>
-                  <h3 className="text-lg font-semibold text-[#2f241d]">{value.title}</h3>
-                  <p className="mt-2 text-sm font-medium leading-6 text-[#4b3428]">{value.text}</p>
+                  <h3 className="text-base font-semibold text-[#2f241d] sm:text-lg">{value.title}</h3>
+                  <p className="mt-1 text-sm font-medium leading-5 text-[#4b3428] sm:mt-2 sm:leading-6">{value.text}</p>
                 </div>
               </div>
             </article>
