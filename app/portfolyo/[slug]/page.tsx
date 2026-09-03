@@ -69,6 +69,56 @@ export default async function ProjectDetailPage({ params }: PageProps<"/portfoly
         </aside>
       </section>
 
+      {project.comparison ? (
+        <section className="border-y border-[#6d4b2f]/15 bg-[#0E120D] px-5 py-16 text-[#f5ebdb] sm:px-8 sm:py-20">
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-8 max-w-3xl">
+              <p className="font-aux text-sm font-semibold uppercase tracking-[0.25em] text-[#B7C96F]">Yapım süreci</p>
+              <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Uygulamadan tamamlanmış görünüme.</h2>
+              <p className="mt-4 leading-7 text-[#efe2cb]">
+                Yapının uygulama aşaması ile tamamlanmış mimari görünümünü yan yana inceleyin.
+              </p>
+            </div>
+
+            <div className="grid gap-5 md:grid-cols-2">
+              <figure className="overflow-hidden rounded-[24px] border border-white/15 bg-white/5">
+                <div className="relative aspect-[3/2] overflow-hidden">
+                  <Image
+                    src={project.comparison.progressImage}
+                    alt={`${project.title} uygulama aşaması`}
+                    fill
+                    sizes="(max-width: 767px) 90vw, 46vw"
+                    className="object-cover"
+                  />
+                </div>
+                <figcaption className="font-aux px-5 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-[#B7C96F]">
+                  Uygulama aşaması
+                </figcaption>
+              </figure>
+
+              <figure className="overflow-hidden rounded-[24px] border border-white/15 bg-white/5">
+                <div className="relative aspect-[3/2] overflow-hidden">
+                  <Image
+                    src={project.comparison.completedImage}
+                    alt={`${project.title} tamamlanmış görünüm`}
+                    fill
+                    sizes="(max-width: 767px) 90vw, 46vw"
+                    className="object-cover"
+                  />
+                </div>
+                <figcaption className="font-aux px-5 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-[#B7C96F]">
+                  Tamamlanmış görünüm
+                </figcaption>
+              </figure>
+            </div>
+
+            <p className="font-aux mt-5 text-xs leading-5 text-[#efe2cb]/65">
+              Görseller stok kaynaklıdır ve yapım sürecini temsili olarak göstermektedir.
+            </p>
+          </div>
+        </section>
+      ) : null}
+
       <section className="border-y border-[#6d4b2f]/15 bg-[#f5ebdb] px-5 py-16 sm:px-8 sm:py-20">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-6 border-b border-[#6d4b2f]/20 pb-9 lg:grid-cols-[.7fr_1.3fr] lg:items-end">

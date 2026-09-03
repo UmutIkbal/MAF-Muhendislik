@@ -36,7 +36,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-[#6d4b2f]/10 bg-[#f5ebdb]/80 backdrop-blur-md">
       <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
-        <a href="#anasayfa" className="relative block h-9 w-12" aria-label="MAF Mühendislik ana sayfa">
+        <a href="#anasayfa" className="relative block h-10 w-14 sm:h-12 sm:w-16" aria-label="MAF Mühendislik ana sayfa">
           <span className="maf-symbol block h-full w-full" aria-hidden="true" />
         </a>
 
@@ -86,7 +86,7 @@ export default function Navbar() {
               <div className="flex items-center justify-between">
                 <a
                   href="#anasayfa"
-                  className="relative block h-9 w-12"
+                  className="relative block h-10 w-14"
                   onClick={handleToggleMenu}
                   aria-label="MAF Mühendislik ana sayfa"
                 >

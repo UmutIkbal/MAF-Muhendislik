@@ -9,7 +9,7 @@ import Contact from "./components/sections/contact";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f5ebdb] text-[#3f2b21]">
+    <main className="home-main min-h-screen bg-[#f5ebdb] text-[#3f2b21]">
       <Navbar />
 
       <section

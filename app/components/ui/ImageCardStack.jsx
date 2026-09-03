@@ -8,11 +8,11 @@ const cardPositions = [
 
 export default function ImageCardStack({ images = [], ariaLabel = "Görsel kartlar", isPreviewing = false }) {
   return (
-    <div className="group relative mx-auto h-64 w-full max-w-sm sm:h-72" aria-label={ariaLabel}>
+    <div className="group relative mx-auto h-56 w-full max-w-sm sm:h-72" aria-label={ariaLabel}>
       {images.slice(0, 3).map((image, index) => (
         <figure
           key={`${image.src}-${index}`}
-          className={`absolute h-[78%] w-[64%] overflow-hidden rounded-2xl border border-[#f5ebdb]/30 bg-[#efe2cb]/10 p-1.5 shadow-xl shadow-black/30 backdrop-blur-xl transition-transform duration-500 ease-out ${cardPositions[index].resting} ${cardPositions[index].hover} ${isPreviewing ? cardPositions[index].opened : ""}`}
+          className={`absolute h-[78%] w-[64%] overflow-hidden rounded-2xl border border-[#f5ebdb]/30 bg-[#efe2cb]/10 p-1.5 shadow-xl shadow-black/30 backdrop-blur-xl transition-transform duration-1000 ease-out ${cardPositions[index].resting} ${cardPositions[index].hover} ${isPreviewing ? cardPositions[index].opened : ""}`}
           style={{ zIndex: index + 1 }}
         >
           <div className="relative h-full w-full overflow-hidden rounded-[0.8rem]">

@@ -19,27 +19,27 @@ export default function Services() {
     return () => observer.disconnect();
   }, []);
 
-  const introClass = isVisible ? "opacity-100 animate-heroSlideIn delay-150" : "opacity-0";
+  const introClass = isVisible ? "opacity-100 animate-softReveal delay-150" : "opacity-0";
   const cardClasses = [
-    isVisible ? "opacity-100 animate-heroSlideIn delay-300" : "opacity-0",
-    isVisible ? "opacity-100 animate-heroSlideIn delay-450" : "opacity-0",
-    isVisible ? "opacity-100 animate-heroSlideIn delay-600" : "opacity-0",
+    isVisible ? "opacity-100 animate-softReveal delay-300" : "opacity-0",
+    isVisible ? "opacity-100 animate-softReveal delay-450" : "opacity-0",
+    isVisible ? "opacity-100 animate-softReveal delay-600" : "opacity-0",
   ];
-  const buttonClass = isVisible ? "opacity-100 animate-heroSlideIn delay-600" : "opacity-0";
+  const buttonClass = isVisible ? "opacity-100 animate-softReveal delay-600" : "opacity-0";
 
   return (
     <div className="flex justify-center">
 
     
     <div ref={servicesRef} className="w-full max-w-6xl">
-      <div className={`mx-auto max-w-4xl px-3 text-center sm:px-6 ${introClass}`}>
+      <div className={`mx-auto max-w-4xl px-0 text-center sm:px-6 ${introClass}`}>
         <p className="text-md font-aux font-semibold uppercase tracking-[0.35em] text-[#B7C96F]">
           Hizmetlerimiz
         </p>
-        <h2 className="mt-4 text-3xl font-semibold text-[#f5ebdb] sm:text-4xl">
+        <h2 className="mt-4 text-3xl font-semibold leading-tight text-[#f5ebdb] sm:text-4xl">
           Yapınızı, yaşam alanınızı ve her detayı birlikte tasarlıyoruz.
         </h2>
-        <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-[#efe2cb] font-medium">
+        <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-[#efe2cb] font-medium sm:text-lg sm:leading-8">
           İnşaat, dekorasyon ve iç mimarlık süreçlerinde ihtiyacınıza uygun, bütüncül çözümler üretiyoruz.
         </p>
       </div>
@@ -48,7 +48,7 @@ export default function Services() {
           <div className={`min-w-[82%] snap-start sm:min-w-[58%] md:min-w-0 ${cardClasses[0]}`}>
             <GlassCard
               className="h-full"
-              image="/stokfotro.jpg"
+              image="/images/projects/konut-1.jpg"
               imageAlt="İnşaat hizmeti"
               cardHead={<h3 className="text-xl font-semibold text-[#2f241d]">İnşaat</h3>}
               cardBody={<p className="text-sm leading-7 text-[#2f241d] font-medium">Planlama, uygulama ve teknik koordinasyonu titizlikle yöneterek sağlam yapılar inşa ediyoruz.</p>}
@@ -58,7 +58,7 @@ export default function Services() {
           <div className={`min-w-[82%] snap-start sm:min-w-[58%] md:min-w-0 ${cardClasses[1]}`}>
             <GlassCard
               className="h-full"
-              image="/stokfotro.jpg"
+              image="/images/projects/yenileme-1.jpg"
               imageAlt="Dekorasyon hizmeti"
               cardHead={<h3 className="text-xl font-semibold text-[#2f241d]">Dekorasyon</h3>}
               cardBody={<p className="text-sm leading-7 text-[#2f241d] font-medium">Malzeme, renk ve detay seçimlerini bir araya getirerek karakteri olan mekanlar oluşturuyoruz.</p>}
@@ -68,7 +68,7 @@ export default function Services() {
           <div className={`min-w-[82%] snap-start sm:min-w-[58%] md:min-w-0 ${cardClasses[2]}`}>
             <GlassCard
               className="h-full"
-              image="/stokfotro.jpg"
+              image="/images/projects/ic-mekan-1.jpg"
               imageAlt="İç mimarlık hizmeti"
               cardHead={<h3 className="text-xl font-semibold text-[#2f241d]">İç Mimarlık</h3>}
               cardBody={<p className="text-sm leading-7 text-[#2f241d] font-medium">İşlevsellik ve estetiği dengede tutarak size özel, yaşanabilir iç mekanlar tasarlıyoruz.</p>}

@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef, useState } from "react";
 
 const contactDetails = {
   phoneDisplay: "0530 145 44 29",
@@ -25,17 +27,32 @@ const contactItems = [
 ];
 
 export default function Contact() {
+  const contactRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (!contactRef.current) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { threshold: 0.2 }
+    );
+
+    observer.observe(contactRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="w-full max-w-6xl">
-      <div className="grid items-center gap-8 lg:grid-cols-[.82fr_1.18fr] lg:gap-12">
-        <div>
+    <div ref={contactRef} className="w-full max-w-6xl">
+      <div className="grid min-w-0 items-center gap-8 lg:grid-cols-[.82fr_1.18fr] lg:gap-12">
+        <div className={isVisible ? "opacity-100 animate-heroSlideIn delay-150" : "opacity-0"}>
           <p className="font-aux text-sm font-semibold uppercase tracking-[0.35em] text-[#4f6b43]">Bize Ulaşın</p>
           <h2 className="mt-3 text-3xl font-semibold leading-tight text-[#2f241d] sm:text-4xl">Projenizi birlikte hayata geçirelim.</h2>
           <p className="mt-4 max-w-xl text-base font-medium leading-7 text-[#4b3428] sm:text-lg">
             Kısa bir soru ya da detaylı bir proje teklifi için dilediğiniz kanaldan bize ulaşabilirsiniz.
           </p>
 
-          <div className="mt-7 grid gap-3">
+          <div className="mt-6 grid gap-3 sm:mt-7">
             {contactItems.map((item) => (
               <a
                 key={item.label}
@@ -56,11 +73,11 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="overflow-hidden rounded-[24px] border border-[#6d4b2f]/20 bg-[#efe2cb]/75 p-3 shadow-xl shadow-[#6d4b2f]/10">
+        <div className={`overflow-hidden rounded-[24px] border border-[#6d4b2f]/20 bg-[#efe2cb]/75 p-3 shadow-xl shadow-[#6d4b2f]/10 ${isVisible ? "opacity-100 animate-heroSlideIn delay-300" : "opacity-0"}`}>
           <iframe
             title="MAF Mühendislik konumu"
             src={mapUrl}
-            className="h-64 w-full rounded-[16px] border-0 sm:h-80"
+            className="h-56 w-full rounded-[16px] border-0 sm:h-80"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             allowFullScreen
