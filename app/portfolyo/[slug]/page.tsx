@@ -15,8 +15,16 @@ export async function generateMetadata({ params }: PageProps<"/portfolyo/[slug]"
   if (!project) return {};
 
   return {
-    title: `${project.title} | MAF Mühendislik`,
+    title: project.title,
     description: project.summary,
+    alternates: { canonical: `/portfolyo/${project.slug}` },
+    openGraph: {
+      title: `${project.title} | MAF Mühendislik`,
+      description: project.summary,
+      url: `/portfolyo/${project.slug}`,
+      type: "article",
+      images: [{ url: project.image, alt: project.title }],
+    },
   };
 }
 

@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { services } from "./services-data";
+
+export const metadata: Metadata = {
+  title: "Hizmetler",
+  description: "İstanbul'da inşaat, dekorasyon ve iç mimarlık alanlarında tasarımdan uygulamaya MAF Mühendislik hizmetleri.",
+  alternates: { canonical: "/hizmetler" },
+  openGraph: { title: "Hizmetler | MAF Mühendislik", url: "/hizmetler" },
+};
 
 export default function ServicesPage() {
   return (

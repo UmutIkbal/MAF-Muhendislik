@@ -35,7 +35,7 @@ export const services: Service[] = [
     title: "İç Mimarlık",
     detailTitle: "İç Mimarlık Tasarım ve Uygulama",
     summary: "Yaşam alanlarınızı estetik ve fonksiyonel tasarımlarla dönüştürüyoruz.",
-    intro: "MAF Mühendislik olarak, 20xx yılından bu yana İstanbul'da yaşam ve çalışma alanlarını sanat eserlerine dönüştürüyoruz. Her projeye özgün bir bakış açısıyla yaklaşarak, mekanların ruhunu yansıtan tasarımlar oluşturuyoruz.",
+    intro: "MAF Mühendislik olarak İstanbul'da yaşam ve çalışma alanlarını işlevsel, estetik ve özgün iç mekanlara dönüştürüyoruz. Her projeye mekanın ihtiyaçlarını ve kullanıcı alışkanlıklarını merkeze alan bir bakış açısıyla yaklaşıyoruz.",
     process: "Projelerimizi dört ana aşamada gerçekleştiriyoruz: Keşif ve analiz, konsept geliştirme, detaylı tasarım ve uygulama. Her aşamada müşterilerimizle yakın iş birliği içinde çalışarak, hayallerini gerçeğe dönüştürüyoruz.",
     image: "/images/projects/ic-mekan-1.jpg",
     imageAlt: "İç mimarlık hizmeti",

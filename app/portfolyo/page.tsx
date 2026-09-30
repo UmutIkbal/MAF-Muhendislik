@@ -40,7 +40,7 @@ export default function PortfolioPage() {
 
           <dl className="font-aux mt-12 grid max-w-2xl grid-cols-3 gap-4 border-t border-[#f5ebdb]/20 pt-7 sm:gap-8">
             <div>
-              <dt className="text-2xl font-semibold text-[#B7C96F] sm:text-3xl">6+</dt>
+              <dt className="text-2xl font-semibold text-[#B7C96F] sm:text-3xl">{projects.length}</dt>
               <dd className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#efe2cb] sm:text-sm">Proje</dd>
             </div>
             <div>
@@ -48,7 +48,7 @@ export default function PortfolioPage() {
               <dd className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#efe2cb] sm:text-sm">Kategori</dd>
             </div>
             <div>
-              <dt className="text-2xl font-semibold text-[#B7C96F] sm:text-3xl">2023</dt>
+              <dt className="text-2xl font-semibold text-[#B7C96F] sm:text-3xl">{Math.min(...projects.map((project) => Number(project.year)))}</dt>
               <dd className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#efe2cb] sm:text-sm">Başlangıç</dd>
             </div>
           </dl>

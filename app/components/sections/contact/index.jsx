@@ -6,7 +6,8 @@ const contactDetails = {
   phoneDisplay: "0530 145 44 29",
   phoneHref: "+905301454429",
   email: "info@mafmuhendislik.com",
-  address: "Gümüşpala, Galip Sk. No:6, İstanbul İş Merkezi Ofis No:3, 34000 Avcılar/İstanbul",
+  address: "Gümüşpala, Galip Sk. No:6, 34320 Avcılar/İstanbul",
+  office: "Ofis No: 3",
 };
 
 const mapUrl = `https://www.google.com/maps?q=${encodeURIComponent(contactDetails.address)}&output=embed`;
@@ -94,6 +95,7 @@ export default function Contact() {
             </svg>
             <span className="text-sm font-semibold leading-6 sm:text-base">{contactDetails.address}</span>
           </a>
+          <p className="px-10 pb-2 text-sm font-semibold leading-6 text-[#4b3428] sm:text-base">{contactDetails.office}</p>
         </div>
       </div>
     </div>
