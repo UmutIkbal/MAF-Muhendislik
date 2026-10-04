@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { breadcrumbData, pageMetadata } from "../../lib/seo";
+import JsonLd from "../../components/JsonLd";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -14,18 +16,12 @@ export async function generateMetadata({ params }: PageProps<"/portfolyo/[slug]"
 
   if (!project) return {};
 
-  return {
+  return pageMetadata({
     title: project.title,
     description: project.summary,
-    alternates: { canonical: `/portfolyo/${project.slug}` },
-    openGraph: {
-      title: `${project.title} | MAF Mühendislik`,
-      description: project.summary,
-      url: `/portfolyo/${project.slug}`,
-      type: "article",
-      images: [{ url: project.image, alt: project.title }],
-    },
-  };
+    path: `/portfolyo/${project.slug}`,
+    image: project.image,
+  });
 }
 
 export default async function ProjectDetailPage({ params }: PageProps<"/portfolyo/[slug]">) {
@@ -36,6 +32,7 @@ export default async function ProjectDetailPage({ params }: PageProps<"/portfoly
 
   return (
     <main className="min-h-screen bg-[#eee2cc] text-[#2f241d]">
+      <JsonLd data={breadcrumbData([{ name: "Ana Sayfa", path: "/" }, { name: "Portfolyo", path: "/portfolyo" }, { name: project.title, path: `/portfolyo/${project.slug}` }])} />
       <header className="absolute inset-x-0 top-0 z-20 border-b border-white/15 bg-[#0E120D]/55 text-[#f5ebdb] backdrop-blur-md">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5 sm:px-8">
           <Link href="/" className="relative block h-9 w-12 transition hover:opacity-75" aria-label="MAF Mühendislik ana sayfa">

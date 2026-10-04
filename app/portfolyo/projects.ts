@@ -24,11 +24,11 @@ export const projects: Project[] = [
     category: "İnşaat",
     location: "Konsept çalışma",
     year: "2025",
-    image: "/images/projects/bahceli-villa.jpg",
+    image: "/images/projects/bahceli-villa.webp",
     images: [
-      "/images/projects/bahceli-villa.jpg",
-      "/images/projects/bahceli-villa-galeri-2.jpg",
-      "/images/projects/bahceli-villa-galeri-3.jpg"
+      "/images/projects/bahceli-villa.webp",
+      "/images/projects/bahceli-villa-galeri-2.webp",
+      "/images/projects/bahceli-villa-galeri-3.webp"
     ],
     summary: "Bahçeyle ilişki kuran geniş açıklıklar ve yalın kütlelerle şekillenen müstakil yaşam önerisi.",
     description: "Görseller stok kaynaklıdır; proje yılı temsili olarak belirtilmiştir. Salon, yemek alanı ve bahçe arasındaki geçişler bu konseptin merkezinde yer alır. Gölgelikli açık alanlar, doğal ışık ve mahremiyet birlikte değerlendirilir; cephede açık tonlar ve ahşap dokular dengelenir.",
@@ -63,11 +63,11 @@ export const projects: Project[] = [
     category: "İnşaat",
     location: "Konsept çalışma",
     year: "2025",
-    image: "/images/projects/cagdas-apartman.jpg",
+    image: "/images/projects/cagdas-apartman.webp",
     images: [
-      "/images/projects/cagdas-apartman.jpg",
-      "/images/projects/cagdas-apartman-galeri-2.jpg",
-      "/images/projects/cagdas-apartman-galeri-3.jpg"
+      "/images/projects/cagdas-apartman.webp",
+      "/images/projects/cagdas-apartman-galeri-2.webp",
+      "/images/projects/cagdas-apartman-galeri-3.webp"
     ],
     summary: "Doğal ışık, açık görüş hatları ve işlevsel planlama etrafında gelişen konut yaklaşımı.",
     description: "Görseller stok kaynaklıdır; proje yılı temsili olarak belirtilmiştir. Bu örnek konut çalışmasında ortak yaşam alanlarının ferahlığı ve odalar arasındaki dolaşım öncelik kazanır. Depolama nişleri ve sade yüzeyler, farklı kullanıcı ihtiyaçlarına uyarlanabilecek bir iç mekan dili sunar.",
@@ -102,11 +102,11 @@ export const projects: Project[] = [
     category: "İç Mimarlık",
     location: "Konsept çalışma",
     year: "2024",
-    image: "/images/projects/acik-plan-salon.jpg",
+    image: "/images/projects/acik-plan-salon.webp",
     images: [
-      "/images/projects/acik-plan-salon.jpg",
-      "/images/projects/acik-plan-salon-galeri-2.jpg",
-      "/images/projects/acik-plan-salon-galeri-3.jpg"
+      "/images/projects/acik-plan-salon.webp",
+      "/images/projects/acik-plan-salon-galeri-2.webp",
+      "/images/projects/acik-plan-salon-galeri-3.webp"
     ],
     summary: "Oturma ve sohbet alanlarını doğal dokularla buluşturan ferah bir salon konsepti.",
     description: "Görseller stok kaynaklıdır; proje yılı temsili olarak belirtilmiştir. Mobilyalar, pencere önlerini ve geçiş yollarını açık bırakacak biçimde düşünülür. Ahşap, dokulu kumaş ve sade aydınlatma seçimleriyle günün farklı saatlerinde kullanılabilecek sakin bir atmosfer hedeflenir.",
@@ -141,11 +141,11 @@ export const projects: Project[] = [
     category: "İç Mimarlık",
     location: "Konsept çalışma",
     year: "2024",
-    image: "/images/projects/ada-mutfak.jpg",
+    image: "/images/projects/ada-mutfak.webp",
     images: [
-      "/images/projects/ada-mutfak.jpg",
-      "/images/projects/ada-mutfak-galeri-2.jpg",
-      "/images/projects/ada-mutfak-galeri-3.jpg"
+      "/images/projects/ada-mutfak.webp",
+      "/images/projects/ada-mutfak-galeri-2.webp",
+      "/images/projects/ada-mutfak-galeri-3.webp"
     ],
     summary: "Hazırlık, depolama ve buluşma alanlarını aynı düzende birleştiren mutfak önerisi.",
     description: "Görseller stok kaynaklıdır; proje yılı temsili olarak belirtilmiştir. Ada çevresindeki hareket alanı, çalışma tezgahının sürekliliği ve sık kullanılan eşyalara erişim birlikte ele alınır. Bu konsept, mutfağın günlük yaşamın bir parçası olarak kullanılmasını destekleyen yalın detaylara odaklanır.",
@@ -180,11 +180,11 @@ export const projects: Project[] = [
     category: "Dekorasyon",
     location: "Konsept çalışma",
     year: "2023",
-    image: "/images/projects/sakin-yatak-odasi.jpg",
+    image: "/images/projects/sakin-yatak-odasi.webp",
     images: [
-      "/images/projects/sakin-yatak-odasi.jpg",
-      "/images/projects/sakin-yatak-odasi-galeri-2.jpg",
-      "/images/projects/sakin-yatak-odasi-galeri-3.jpg"
+      "/images/projects/sakin-yatak-odasi.webp",
+      "/images/projects/sakin-yatak-odasi-galeri-2.webp",
+      "/images/projects/sakin-yatak-odasi-galeri-3.webp"
     ],
     summary: "Yumuşak renkler ve dengeli ışıkla dinlenmeye odaklanan yatak odası konsepti.",
     description: "Görseller stok kaynaklıdır; proje yılı temsili olarak belirtilmiştir. Yatak çevresindeki geçişler, başucu kullanımı ve tekstil katmanları bir bütün olarak düşünülür. Görsel kalabalığı azaltan mobilyalar ve sıcak aydınlatma, gün sonunda sakinleşmeye uygun bir mekan önerir.",
@@ -219,11 +219,11 @@ export const projects: Project[] = [
     category: "Dekorasyon",
     location: "Konsept çalışma",
     year: "2023",
-    image: "/images/projects/dogal-dokulu-banyo.jpg",
+    image: "/images/projects/dogal-dokulu-banyo.webp",
     images: [
-      "/images/projects/dogal-dokulu-banyo.jpg",
-      "/images/projects/dogal-dokulu-banyo-galeri-2.jpg",
-      "/images/projects/dogal-dokulu-banyo-galeri-3.jpg"
+      "/images/projects/dogal-dokulu-banyo.webp",
+      "/images/projects/dogal-dokulu-banyo-galeri-2.webp",
+      "/images/projects/dogal-dokulu-banyo-galeri-3.webp"
     ],
     summary: "Taş hissi veren yüzeyler ve sade detaylarla kurgulanan banyo yenileme fikri.",
     description: "Görseller stok kaynaklıdır; proje yılı temsili olarak belirtilmiştir. Lavabo çevresi, ayna ve depolama alanları günlük rutinleri kolaylaştıracak şekilde ele alınır. Islak ve kuru kullanım bölgelerinin ayrımı, temizlenebilir yüzeyler ve dengeli aydınlatma bu örnek tasarımın temel kararlarıdır.",
@@ -258,11 +258,11 @@ export const projects: Project[] = [
     category: "İç Mimarlık",
     location: "Konsept çalışma",
     year: "2022",
-    image: "/images/projects/ortak-calisma-ofisi.jpg",
+    image: "/images/projects/ortak-calisma-ofisi.webp",
     images: [
-      "/images/projects/ortak-calisma-ofisi.jpg",
-      "/images/projects/ortak-calisma-ofisi-galeri-2.jpg",
-      "/images/projects/ortak-calisma-ofisi-galeri-3.jpg"
+      "/images/projects/ortak-calisma-ofisi.webp",
+      "/images/projects/ortak-calisma-ofisi-galeri-2.webp",
+      "/images/projects/ortak-calisma-ofisi-galeri-3.webp"
     ],
     summary: "Ekip iletişimini ve bireysel odaklanmayı bir arada destekleyen ofis konsepti.",
     description: "Görseller stok kaynaklıdır; proje yılı temsili olarak belirtilmiştir. Çalışma masaları, kısa görüşme noktaları ve dinlenme alanları farklı kullanım yoğunluklarına göre düşünülür. Gün ışığından yararlanan yerleşim, kablo düzeni ve bitkisel dokunuşlar daha düzenli bir çalışma ortamı hedefler.",
@@ -297,11 +297,11 @@ export const projects: Project[] = [
     category: "Dekorasyon",
     location: "Konsept çalışma",
     year: "2021",
-    image: "/images/projects/butik-kafe.jpg",
+    image: "/images/projects/butik-kafe.webp",
     images: [
-      "/images/projects/butik-kafe.jpg",
-      "/images/projects/butik-kafe-galeri-2.jpg",
-      "/images/projects/butik-kafe-galeri-3.jpg"
+      "/images/projects/butik-kafe.webp",
+      "/images/projects/butik-kafe-galeri-2.webp",
+      "/images/projects/butik-kafe-galeri-3.webp"
     ],
     summary: "Sıcak malzemeler ve farklı oturma seçenekleriyle mahalle ölçeğinde bir buluşma alanı.",
     description: "Görseller stok kaynaklıdır; proje yılı temsili olarak belirtilmiştir. Girişten sipariş noktasına uzanan akış ve masa aralarındaki servis geçişleri birlikte değerlendirilir. Ahşap detaylar, yumuşak ışık ve küçük oturma grupları, kısa molalardan uzun sohbetlere uzanan kullanım senaryoları sunar.",
@@ -336,11 +336,11 @@ export const projects: Project[] = [
     category: "İç Mimarlık",
     location: "Konsept çalışma",
     year: "2021",
-    image: "/images/projects/restoran-ic-mekan.jpg",
+    image: "/images/projects/restoran-ic-mekan.webp",
     images: [
-      "/images/projects/restoran-ic-mekan.jpg",
-      "/images/projects/restoran-ic-mekan-galeri-2.jpg",
-      "/images/projects/restoran-ic-mekan-galeri-3.jpg"
+      "/images/projects/restoran-ic-mekan.webp",
+      "/images/projects/restoran-ic-mekan-galeri-2.webp",
+      "/images/projects/restoran-ic-mekan-galeri-3.webp"
     ],
     summary: "Malzeme, ışık ve masa düzeninin birlikte şekillendirdiği davetkar bir yemek mekanı.",
     description: "Görseller stok kaynaklıdır; proje yılı temsili olarak belirtilmiştir. Karşılama, yemek ve servis alanları arasında anlaşılır bir düzen önerilir. Konseptte masa mahremiyeti, akustik rahatlık ve bakım kolaylığı öne çıkar; farklı grup büyüklüklerine uyum sağlayan bir yerleşim hedeflenir.",
@@ -375,11 +375,11 @@ export const projects: Project[] = [
     category: "İnşaat",
     location: "Konsept çalışma",
     year: "2020",
-    image: "/images/projects/bahce-teras.jpg",
+    image: "/images/projects/bahce-teras.webp",
     images: [
-      "/images/projects/bahce-teras.jpg",
-      "/images/projects/bahce-teras-galeri-2.jpg",
-      "/images/projects/bahce-teras-galeri-3.jpg"
+      "/images/projects/bahce-teras.webp",
+      "/images/projects/bahce-teras-galeri-2.webp",
+      "/images/projects/bahce-teras-galeri-3.webp"
     ],
     summary: "Konutun açık alan kullanımını güçlendiren teras ve bahçe ilişkisi.",
     description: "Görseller stok kaynaklıdır; proje yılı temsili olarak belirtilmiştir. Bu konsept, kapalı yaşam alanlarının dışarıya doğru devam etmesini sağlayan oturma ve geçiş bölgelerine odaklanır. Dış ortam koşullarına uygun malzemeler, yüzey suyu tahliyesi ve gölgeleme, tasarımın uygulamaya dönük başlıklarını oluşturur.",
@@ -415,11 +415,11 @@ export const projects: Project[] = [
     category: "İnşaat",
     location: "İstanbul",
     year: "2025",
-    image: "/images/projects/konut-1.jpg",
-    images: ["/images/projects/konut-1.jpg", "/images/projects/konut-2.jpg", "/images/projects/konut-3.jpg"],
+    image: "/images/projects/konut-1.webp",
+    images: ["/images/projects/konut-1.webp", "/images/projects/konut-2.webp", "/images/projects/konut-3.webp"],
     comparison: {
-      progressImage: "/images/projects/konut-surec.jpg",
-      completedImage: "/images/projects/konut-1.jpg",
+      progressImage: "/images/projects/konut-surec.webp",
+      completedImage: "/images/projects/konut-1.webp",
     },
     summary: "Çağdaş yaşam ihtiyaçlarına göre planlanan, işlev ve estetiği bir araya getiren bütüncül konut uygulaması.",
     description: "Proje; ilk keşif ve planlama aşamasından malzeme seçimlerine, saha koordinasyonundan son uygulama detaylarına kadar tek elden yürütüldü. Doğal dokular, dengeli ışık ve uzun ömürlü çözümler tasarımın temelini oluşturdu.",
@@ -438,8 +438,8 @@ export const projects: Project[] = [
     category: "İç Mimarlık",
     location: "İstanbul",
     year: "2025",
-    image: "/images/projects/ic-mekan-1.jpg",
-    images: ["/images/projects/ic-mekan-1.jpg", "/images/projects/ic-mekan-2.jpg", "/images/projects/ic-mekan-3.jpg"],
+    image: "/images/projects/ic-mekan-1.webp",
+    images: ["/images/projects/ic-mekan-1.webp", "/images/projects/ic-mekan-2.webp", "/images/projects/ic-mekan-3.webp"],
     summary: "Mekanın karakterini güçlendiren, sakin ve zamansız bir iç mimari yaklaşım.",
     description: "Kullanıcı alışkanlıkları merkeze alınarak dolaşım, depolama ve aydınlatma kararları birlikte ele alındı. Renk ve malzeme paleti, mekanlar arasında görsel süreklilik oluşturacak şekilde kurgulandı.",
     scope: ["Konsept tasarım", "Mekan planlama", "Malzeme seçimi", "Uygulama takibi"],
@@ -457,8 +457,8 @@ export const projects: Project[] = [
     category: "Dekorasyon",
     location: "İstanbul",
     year: "2024",
-    image: "/images/projects/yenileme-1.jpg",
-    images: ["/images/projects/yenileme-1.jpg", "/images/projects/yenileme-2.jpg", "/images/projects/yenileme-3.jpg"],
+    image: "/images/projects/yenileme-1.webp",
+    images: ["/images/projects/yenileme-1.webp", "/images/projects/yenileme-2.webp", "/images/projects/yenileme-3.webp"],
     summary: "Mevcut yapının değerlerini koruyarak daha aydınlık, kullanışlı ve güncel hale getirilen yenileme projesi.",
     description: "Mekandaki kullanılabilir elemanlar korunurken yüzeyler, sabit mobilyalar ve aydınlatma sistemi yenilendi. Uygulama programı, günlük yaşamı en az etkileyecek biçimde aşamalı olarak planlandı.",
     scope: ["Keşif ve ölçülendirme", "Dekorasyon", "Özel imalat", "Uygulama yönetimi"],
@@ -476,11 +476,11 @@ export const projects: Project[] = [
     category: "İnşaat",
     location: "İstanbul",
     year: "2024",
-    image: "/images/projects/yasam-1.jpg",
-    images: ["/images/projects/yasam-1.jpg", "/images/projects/yasam-2.jpg", "/images/projects/yasam-3.jpg"],
+    image: "/images/projects/yasam-1.webp",
+    images: ["/images/projects/yasam-1.webp", "/images/projects/yasam-2.webp", "/images/projects/yasam-3.webp"],
     comparison: {
-      progressImage: "/images/projects/yasam-surec-clean.png",
-      completedImage: "/images/projects/yasam-2.jpg",
+      progressImage: "/images/projects/yasam-surec-clean.webp",
+      completedImage: "/images/projects/yasam-2.webp",
     },
     summary: "Günlük yaşamın farklı anlarına uyum sağlayan, konforlu ve dayanıklı bir yaşam alanı.",
     description: "Yapısal gereksinimler ve iç mekan kararları eş zamanlı geliştirilerek uygulama sürecindeki kayıplar azaltıldı. Detay çözümlerinde kolay bakım, dayanıklılık ve kullanıcı konforu önceliklendirildi.",
@@ -499,8 +499,8 @@ export const projects: Project[] = [
     category: "İç Mimarlık",
     location: "İstanbul",
     year: "2024",
-    image: "/images/projects/ofis-1.jpg",
-    images: ["/images/projects/ofis-1.jpg", "/images/projects/ofis-2.jpg", "/images/projects/ofis-3.jpg"],
+    image: "/images/projects/ofis-1.webp",
+    images: ["/images/projects/ofis-1.webp", "/images/projects/ofis-2.webp", "/images/projects/ofis-3.webp"],
     summary: "Odaklanma, iletişim ve esnek çalışma ihtiyaçlarını dengeleyen çağdaş ofis düzenlemesi.",
     description: "Çalışma alanları, toplantı noktaları ve ortak kullanımlar akustik ve görsel konfor gözetilerek ayrıştırıldı. Kurumsal kimliği destekleyen yalın bir malzeme ve renk dili oluşturuldu.",
     scope: ["İhtiyaç analizi", "Yerleşim planı", "Mobilya tasarımı", "Uygulama danışmanlığı"],
@@ -518,8 +518,8 @@ export const projects: Project[] = [
     category: "Dekorasyon",
     location: "İstanbul",
     year: "2023",
-    image: "/images/projects/detay-1.jpg",
-    images: ["/images/projects/detay-1.jpg", "/images/projects/detay-2.jpg", "/images/projects/detay-3.jpg"],
+    image: "/images/projects/detay-1.webp",
+    images: ["/images/projects/detay-1.webp", "/images/projects/detay-2.webp", "/images/projects/detay-3.webp"],
     summary: "Mekana özgü ölçü, malzeme ve işçilik kararlarıyla geliştirilen özel detay uygulaması.",
     description: "Tasarım fikri, üretilebilir detaylara dönüştürülerek numune ve imalat aşamaları yakından takip edildi. Farklı malzemelerin birleşim noktalarında temiz ve uzun ömürlü çözümler geliştirildi.",
     scope: ["Detay tasarımı", "Malzeme araştırması", "Özel üretim", "Montaj kontrolü"],

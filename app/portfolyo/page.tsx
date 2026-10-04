@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { categories, projects } from "./projects";
+import JsonLd from "../components/JsonLd";
+import { breadcrumbData } from "../lib/seo";
 
 export default function PortfolioPage() {
   const [activeCategory, setActiveCategory] = useState("Tümü");
@@ -14,6 +16,7 @@ export default function PortfolioPage() {
 
   return (
     <main className="min-h-screen bg-[#eee2cc] text-[#2f241d]">
+      <JsonLd data={breadcrumbData([{ name: "Ana Sayfa", path: "/" }, { name: "Portfolyo", path: "/portfolyo" }])} />
       <header className="border-b border-[#6d4b2f]/15 bg-[#f5ebdb]/85 backdrop-blur-md">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5 sm:px-8">
           <Link href="/" className="relative block h-9 w-12 transition hover:opacity-75" aria-label="MAF Mühendislik ana sayfa">

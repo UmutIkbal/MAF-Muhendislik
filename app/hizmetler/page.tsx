@@ -1,18 +1,20 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "../lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { services } from "./services-data";
+import JsonLd from "../components/JsonLd";
+import { breadcrumbData } from "../lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Hizmetler",
   description: "İstanbul'da inşaat, dekorasyon ve iç mimarlık alanlarında tasarımdan uygulamaya MAF Mühendislik hizmetleri.",
-  alternates: { canonical: "/hizmetler" },
-  openGraph: { title: "Hizmetler | MAF Mühendislik", url: "/hizmetler" },
-};
+  path: "/hizmetler",
+});
 
 export default function ServicesPage() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#0E120D] px-6 py-8 text-[#f5ebdb] sm:px-8 lg:px-12">
+      <JsonLd data={breadcrumbData([{ name: "Ana Sayfa", path: "/" }, { name: "Hizmetler", path: "/hizmetler" }])} />
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -left-40 top-20 h-[30rem] w-[30rem] rounded-full bg-[#4F6B43]/20 blur-[120px]" />
         <div className="absolute -right-36 bottom-0 h-[32rem] w-[32rem] rounded-full bg-[#4F6B43]/18 blur-[120px]" />

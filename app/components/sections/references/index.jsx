@@ -5,9 +5,9 @@ import ImageCardStack from "../../ui/ImageCardStack";
 import Link from "next/link";
 
 const portfolioImages = [
-  { src: "/images/projects/konut-1.jpg", alt: "Modern konut uygulaması" },
-  { src: "/images/projects/yenileme-1.jpg", alt: "Modern mekân yenileme uygulaması" },
-  { src: "/images/projects/ic-mekan-1.jpg", alt: "Çağdaş iç mimari uygulaması" },
+  { src: "/images/projects/konut-1.webp", alt: "Modern konut uygulaması" },
+  { src: "/images/projects/yenileme-1.webp", alt: "Modern mekân yenileme uygulaması" },
+  { src: "/images/projects/ic-mekan-1.webp", alt: "Çağdaş iç mimari uygulaması" },
 ];
 
 export default function Portfolio() {

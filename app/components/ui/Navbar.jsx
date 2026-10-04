@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const navItems = [
   { label: "Ana Sayfa", href: "#anasayfa" },
@@ -13,12 +13,6 @@ const navItems = [
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
-
-  useEffect(() => {
-    if (!menuOpen) {
-      setIsClosing(false);
-    }
-  }, [menuOpen]);
 
   const handleToggleMenu = () => {
     if (menuOpen) {

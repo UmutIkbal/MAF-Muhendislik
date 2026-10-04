@@ -48,7 +48,7 @@ export default function Services() {
           <div className={`min-w-[82%] snap-start sm:min-w-[58%] md:min-w-0 ${cardClasses[0]}`}>
             <GlassCard
               className="h-full"
-              image="/images/projects/konut-1.jpg"
+              image="/images/projects/konut-1.webp"
               imageAlt="İnşaat hizmeti"
               cardHead={<h3 className="text-xl font-semibold text-[#2f241d]">İnşaat</h3>}
               cardBody={<p className="text-sm leading-7 text-[#2f241d] font-medium">Planlama, uygulama ve teknik koordinasyonu titizlikle yöneterek sağlam yapılar inşa ediyoruz.</p>}
@@ -58,7 +58,7 @@ export default function Services() {
           <div className={`min-w-[82%] snap-start sm:min-w-[58%] md:min-w-0 ${cardClasses[1]}`}>
             <GlassCard
               className="h-full"
-              image="/images/projects/yenileme-1.jpg"
+              image="/images/projects/yenileme-1.webp"
               imageAlt="Dekorasyon hizmeti"
               cardHead={<h3 className="text-xl font-semibold text-[#2f241d]">Dekorasyon</h3>}
               cardBody={<p className="text-sm leading-7 text-[#2f241d] font-medium">Malzeme, renk ve detay seçimlerini bir araya getirerek karakteri olan mekanlar oluşturuyoruz.</p>}
@@ -68,7 +68,7 @@ export default function Services() {
           <div className={`min-w-[82%] snap-start sm:min-w-[58%] md:min-w-0 ${cardClasses[2]}`}>
             <GlassCard
               className="h-full"
-              image="/images/projects/ic-mekan-1.jpg"
+              image="/images/projects/ic-mekan-1.webp"
               imageAlt="İç mimarlık hizmeti"
               cardHead={<h3 className="text-xl font-semibold text-[#2f241d]">İç Mimarlık</h3>}
               cardBody={<p className="text-sm leading-7 text-[#2f241d] font-medium">İşlevsellik ve estetiği dengede tutarak size özel, yaşanabilir iç mekanlar tasarlıyoruz.</p>}

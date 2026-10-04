@@ -102,8 +102,8 @@ h6 {
     background: linear-gradient(to left, rgba(0, 0, 0, 1), transparent);
   }
 
-  .hero-section {
-    background-position: 48% center !important;
+  .hero-background-image {
+    object-position: 48% center;
   }
 
   .hero-right-glow {

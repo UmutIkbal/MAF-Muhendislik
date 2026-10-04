@@ -17,7 +17,7 @@ export const services: Service[] = [
     summary: "Projelerinizi planlı, sağlam ve titiz bir uygulama süreciyle hayata geçiriyoruz.",
     intro: "MAF Mühendislik olarak, ihtiyaçlarınıza uygun yapı çözümlerini ilk fikirden anahtar teslim uygulamaya kadar bütüncül bir yaklaşımla yönetiyoruz.",
     process: "Süreci keşif ve ihtiyaç analizi, proje planlama, uygulama koordinasyonu ve kalite kontrol adımlarıyla yürütüyoruz. Her aşamada açık iletişim ve teknik doğruluğu önceliklendiriyoruz.",
-    image: "/images/projects/konut-1.jpg",
+    image: "/images/projects/konut-1.webp",
     imageAlt: "İnşaat hizmeti",
   },
   {
@@ -27,7 +27,7 @@ export const services: Service[] = [
     summary: "Mekanların karakterini renk, malzeme ve detaylarla yeniden yorumluyoruz.",
     intro: "Her mekanın kendine özgü bir hikayesi olduğuna inanıyor; bu hikayeyi doğru malzeme, doku ve renk seçimleriyle görünür kılıyoruz.",
     process: "Keşif, tarz belirleme, malzeme seçimi ve uygulama aşamalarını birlikte planlıyor; tasarım kararlarını mekanın ihtiyaçlarıyla dengeliyoruz.",
-    image: "/images/projects/yenileme-1.jpg",
+    image: "/images/projects/yenileme-1.webp",
     imageAlt: "Dekorasyon hizmeti",
   },
   {
@@ -37,7 +37,7 @@ export const services: Service[] = [
     summary: "Yaşam alanlarınızı estetik ve fonksiyonel tasarımlarla dönüştürüyoruz.",
     intro: "MAF Mühendislik olarak İstanbul'da yaşam ve çalışma alanlarını işlevsel, estetik ve özgün iç mekanlara dönüştürüyoruz. Her projeye mekanın ihtiyaçlarını ve kullanıcı alışkanlıklarını merkeze alan bir bakış açısıyla yaklaşıyoruz.",
     process: "Projelerimizi dört ana aşamada gerçekleştiriyoruz: Keşif ve analiz, konsept geliştirme, detaylı tasarım ve uygulama. Her aşamada müşterilerimizle yakın iş birliği içinde çalışarak, hayallerini gerçeğe dönüştürüyoruz.",
-    image: "/images/projects/ic-mekan-1.jpg",
+    image: "/images/projects/ic-mekan-1.webp",
     imageAlt: "İç mimarlık hizmeti",
   },
 ];

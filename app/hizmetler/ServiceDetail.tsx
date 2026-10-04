@@ -1,3 +1,6 @@
+import JsonLd from "../components/JsonLd";
+import { breadcrumbData } from "../lib/seo";
+import { SITE_URL } from "../lib/site";
 import Image from "next/image";
 import Link from "next/link";
 import type { Service } from "./services-data";
@@ -5,6 +8,19 @@ import type { Service } from "./services-data";
 export default function ServiceDetail({ service }: { service: Service }) {
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#0E120D] px-4 py-4 text-[#f5ebdb] sm:px-6 sm:py-6 lg:px-10 lg:py-8">
+      <JsonLd data={breadcrumbData([{ name: "Ana Sayfa", path: "/" }, { name: "Hizmetler", path: "/hizmetler" }, { name: service.title, path: `/hizmetler/${service.slug}` }])} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": `${SITE_URL}/hizmetler/${service.slug}#service`,
+        name: service.detailTitle,
+        serviceType: service.title,
+        description: `${service.summary} ${service.intro}`,
+        url: `${SITE_URL}/hizmetler/${service.slug}`,
+        image: `${SITE_URL}${service.image}`,
+        provider: { "@id": `${SITE_URL}/#business` },
+        areaServed: { "@type": "City", name: "İstanbul" },
+      }} />
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -left-40 top-10 h-[30rem] w-[30rem] rounded-full bg-[#4F6B43]/20 blur-[120px]" />
         <div className="absolute -right-36 bottom-0 h-[32rem] w-[32rem] rounded-full bg-[#4F6B43]/18 blur-[120px]" />
@@ -33,7 +49,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
               <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-br from-black/70 via-black/45 to-[#4F6B43]/35 backdrop-blur-[1px]" />
               <div className="relative">
                 <p className="font-aux text-sm font-semibold uppercase tracking-[0.35em] text-[#CAC4B4]">{service.title}</p>
-                <h1 className="mt-4 text-4xl font-semibold leading-tight sm:text-5xl">{service.detailTitle}</h1>
+                <h1 className="mt-4 text-4xl font-semibold leading-tight sm:text-5xl">İstanbul {service.detailTitle}</h1>
                 <p className="mt-6 max-w-2xl text-lg leading-8 text-[#efe2cb] sm:text-xl">{service.summary}</p>
                 <Link
                   href="/#iletisim"
