@@ -2,10 +2,21 @@ import fs from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
-// Use the existing square brand icon; ICO entries contain PNG images.
+// Keep the existing brand symbol readable on light browser/search backgrounds.
 const source = fileURLToPath(new URL("../public/maf-favicon.png", import.meta.url));
+const background = "#4f6b43"; // Matches the site's .maf-symbol brand green.
+const symbol = await sharp(source).trim().png().toBuffer();
+async function renderIcon(size) {
+  const padding = Math.max(1, Math.round(size / 16));
+  return sharp(symbol)
+    .resize(size - padding * 2, size - padding * 2, { fit: "contain", background })
+    .flatten({ background })
+    .extend({ top: padding, bottom: padding, left: padding, right: padding, background })
+    .png()
+    .toBuffer();
+}
 const sizes = [16, 32, 48, 96];
-const images = await Promise.all(sizes.map((size) => sharp(source).resize(size, size).png().toBuffer()));
+const images = await Promise.all(sizes.map(renderIcon));
 const header = Buffer.alloc(6 + images.length * 16);
 header.writeUInt16LE(1, 2);
 header.writeUInt16LE(images.length, 4);
@@ -21,5 +32,5 @@ images.forEach((image, index) => {
   offset += image.length;
 });
 await fs.writeFile(new URL("../public/favicon.ico", import.meta.url), Buffer.concat([header, ...images]));
-await sharp(source).resize(180, 180).png().toFile(fileURLToPath(new URL("../public/apple-touch-icon.png", import.meta.url)));
+await fs.writeFile(new URL("../public/apple-touch-icon.png", import.meta.url), await renderIcon(180));
 console.log("Brand favicon generated (16/32/48/96px ICO and 180px Apple icon).");
