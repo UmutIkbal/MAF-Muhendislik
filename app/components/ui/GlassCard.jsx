@@ -12,7 +12,7 @@ export default function GlassCard({ cardHead, cardBody, cardFooter, className = 
             src={image}
             alt={imageAlt}
             fill
-            sizes="(max-width: 767px) 82vw, 33vw"
+            sizes="(max-width: 639px) 82vw, (max-width: 767px) 58vw, (max-width: 1215px) calc((100vw - 96px) / 3), 374px"
             className="object-cover"
           />
           <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />

@@ -44,7 +44,7 @@ export default function ServicesPage() {
                 href={`/hizmetler/${encodeURIComponent(service.slug)}`}
                 className="group relative min-h-80 overflow-hidden rounded-[28px] border border-[#f5ebdb]/30 bg-[#efe2cb]/15 p-6 shadow-xl shadow-black/25 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-[#f5ebdb]/50"
               >
-                <Image src={service.image} alt={service.imageAlt} fill sizes="(max-width: 767px) 100vw, 33vw" className="object-cover transition duration-500 group-hover:scale-105" />
+                <Image src={service.image} alt={service.imageAlt} fill sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1247px) calc((100vw - 104px) / 3), 371px" className="object-cover transition duration-500 group-hover:scale-105" />
                 <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/15" />
                 <div className="relative flex h-full flex-col justify-end">
                   <h2 className="text-2xl font-semibold">{service.title}</h2>

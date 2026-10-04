@@ -2,6 +2,14 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Images are served through a static `next/image` loader because this project uses
+`output: "export"`. `npm run dev` and `npm run build` generate responsive WebP
+variants automatically from original JPG/PNG files when available, without
+modifying those originals. Publish the entire `out` directory, including
+`responsive-images`. Run `npm run images:responsive` after adding image sources.
+The default server-side Next.js WebP/AVIF negotiation requires a server or an
+external image service and is not available on this static hosting setup.
+
 First, run the development server:
 
 ```bash

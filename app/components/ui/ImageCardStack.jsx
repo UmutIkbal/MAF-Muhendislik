@@ -20,7 +20,7 @@ export default function ImageCardStack({ images = [], ariaLabel = "Görsel kartl
               src={image.src}
               alt={image.alt}
               fill
-              sizes="(max-width: 639px) 58vw, 220px"
+              sizes="(max-width: 639px) 250px, 325px"
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />

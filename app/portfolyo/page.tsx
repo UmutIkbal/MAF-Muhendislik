@@ -94,7 +94,7 @@ export default function PortfolioPage() {
             >
               <article>
               <div className="relative aspect-[4/5] overflow-hidden">
-                <Image src={project.image} alt={project.title} fill sizes="(max-width: 639px) 90vw, (max-width: 1023px) 44vw, 30vw" className="object-cover transition duration-500 group-hover:scale-105" />
+                <Image src={project.image} alt={project.title} fill sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) calc((100vw - 84px) / 2), (max-width: 1215px) calc((100vw - 104px) / 3), 350px" className="object-cover transition duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2f241d]/90 via-[#2f241d]/10 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-6 text-[#f5ebdb]">
                   <div className="font-aux flex items-center justify-between gap-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#B7C96F]">

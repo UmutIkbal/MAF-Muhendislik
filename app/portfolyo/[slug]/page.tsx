@@ -45,7 +45,7 @@ export default async function ProjectDetailPage({ params }: PageProps<"/portfoly
       </header>
 
       <section className="relative flex min-h-[78svh] items-end overflow-hidden bg-[#0E120D] px-5 pb-14 pt-32 text-[#f5ebdb] sm:px-8 sm:pb-20">
-        <Image src={project.image} alt={project.title} fill priority sizes="100vw" className="object-cover opacity-60" />
+        <Image src={project.image} alt={project.title} fill loading="eager" fetchPriority="high" sizes="100vw" className="object-cover opacity-60" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0E120D] via-[#0E120D]/45 to-[#0E120D]/35" />
         <div className="relative mx-auto grid w-full max-w-6xl gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
           <div>
@@ -92,7 +92,7 @@ export default async function ProjectDetailPage({ params }: PageProps<"/portfoly
                     src={project.comparison.progressImage}
                     alt={`${project.title} uygulama aşaması`}
                     fill
-                    sizes="(max-width: 767px) 90vw, 46vw"
+                    sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1215px) calc((100vw - 88px) / 2), 564px"
                     className="object-cover"
                   />
                 </div>
@@ -107,7 +107,7 @@ export default async function ProjectDetailPage({ params }: PageProps<"/portfoly
                     src={project.comparison.completedImage}
                     alt={`${project.title} tamamlanmış görünüm`}
                     fill
-                    sizes="(max-width: 767px) 90vw, 46vw"
+                    sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1215px) calc((100vw - 88px) / 2), 564px"
                     className="object-cover"
                   />
                 </div>
@@ -158,7 +158,7 @@ export default async function ProjectDetailPage({ params }: PageProps<"/portfoly
         <div className="grid gap-5 sm:grid-cols-2">
           {project.images.map((image, index) => (
             <figure key={`${image}-${index}`} className={`relative overflow-hidden rounded-[24px] ${index === 0 ? "aspect-[16/10] sm:col-span-2" : "aspect-[4/3]"}`}>
-              <Image src={image} alt={`${project.title} - proje görseli ${index + 1}`} fill sizes={index === 0 ? "(max-width: 767px) 90vw, 1100px" : "(max-width: 767px) 90vw, 540px"} className="object-cover transition duration-500 hover:scale-[1.02]" />
+              <Image src={image} alt={`${project.title} - proje görseli ${index + 1}`} fill sizes={index === 0 ? "(max-width: 639px) calc(100vw - 40px), (max-width: 1151px) calc(100vw - 64px), 1088px" : "(max-width: 639px) calc(100vw - 40px), (max-width: 1151px) calc((100vw - 84px) / 2), 534px"} className="object-cover transition duration-500 hover:scale-[1.02]" />
             </figure>
           ))}
         </div>

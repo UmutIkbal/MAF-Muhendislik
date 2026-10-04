@@ -43,7 +43,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
                 src={service.image}
                 alt=""
                 fill
-                sizes="(max-width: 1023px) 100vw, 55vw"
+                sizes="(max-width: 639px) calc(100vw - 80px), (max-width: 1023px) calc(100vw - 128px), (max-width: 1231px) calc(60vw - 139px), 600px"
                 className="-z-20 scale-105 object-cover opacity-70 blur-[1px]"
               />
               <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-br from-black/70 via-black/45 to-[#4F6B43]/35 backdrop-blur-[1px]" />

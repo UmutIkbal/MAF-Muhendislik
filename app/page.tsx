@@ -21,7 +21,7 @@ export default function Home() {
           fill
           loading="eager"
           fetchPriority="high"
-          sizes="100vw"
+          sizes="(max-aspect-ratio: 4/3) calc((100svh - 73px) * 4 / 3), 100vw"
           className="hero-background-image -z-10 object-cover object-center"
         />
        <div className="absolute inset-0 bg-black/25 bg-gradient-to-b from-black/70 via-black/90 to-black/90" />
