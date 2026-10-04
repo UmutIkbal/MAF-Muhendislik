@@ -31,11 +31,11 @@ export const metadata: Metadata = {
     "anahtar teslim tadilat",
     "MAF Mühendislik",
   ],
-  alternates: { canonical: "/" },
+  alternates: { canonical: `${SITE_URL}/` },
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    url: "/",
+    url: `${SITE_URL}/`,
     siteName: SITE_NAME,
     title: "MAF Mühendislik | İnşaat, Dekorasyon ve İç Mimarlık",
     description: SITE_DESCRIPTION,
@@ -52,9 +52,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/maf-symbol.webp",
-    shortcut: "/maf-symbol.webp",
-    apple: "/maf-symbol.webp",
+    apple: { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
   },
 };
 
