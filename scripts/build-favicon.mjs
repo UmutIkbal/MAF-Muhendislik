@@ -20,6 +20,6 @@ images.forEach((image, index) => {
   header.writeUInt32LE(offset, entry + 12);
   offset += image.length;
 });
-await fs.writeFile(new URL("../app/favicon.ico", import.meta.url), Buffer.concat([header, ...images]));
+await fs.writeFile(new URL("../public/favicon.ico", import.meta.url), Buffer.concat([header, ...images]));
 await sharp(source).resize(180, 180).png().toFile(fileURLToPath(new URL("../public/apple-touch-icon.png", import.meta.url)));
 console.log("Brand favicon generated (16/32/48/96px ICO and 180px Apple icon).");
